@@ -1,0 +1,30 @@
+
+:root {
+  --blue-1: #24a7ff;
+  --blue-2:#70c6ff;
+  --purple-dark: #4c1d95;
+  --green: #10b981;
+  --blue-text:hwb(197 0% 0%);
+}
+
+body{
+      margin: 0;
+    background-color: lab(86.43% 2.17 13.47);
+}
+
+                   @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Black.ttf');
+       }
+
+                        @font-face {
+      font-family: 'Inter';
+      src: url('fonts/Inter-VariableFont_opsz\,wght.ttf');
+       }
+
+    #blue{
+        color: var(--blue-text);
+    }
+    #green{
+        color: var(--green);
+    }
