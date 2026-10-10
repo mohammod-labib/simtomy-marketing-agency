@@ -59,3 +59,10 @@
      gap: 60px;
 }
 }
+@media all and (min-width:550px) and (max-width:1050px){
+    .service-grid{
+       display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 90px;
+}
+}
