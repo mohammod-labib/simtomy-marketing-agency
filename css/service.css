@@ -52,14 +52,34 @@
     font-weight: 700;
 }
 
-@media all and (min-width:10px) and (max-width:550px){
+@media all and (min-width:10px) and (max-width:520px){
+    .service{
+    margin-left: 30px;
+     margin-right: 30px; 
+}
     .service-grid{
+
        display: grid;
      grid-template-columns: 1fr ;
      gap: 60px;
 }
 }
-@media all and (min-width:550px) and (max-width:1050px){
+@media all and (min-width:521px) and (max-width:750px){
+        .service{
+    margin-left: 40px;
+     margin-right: 40px; 
+}
+    .service-grid{
+       display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 30px;
+}
+}
+@media all and (min-width:751px) and (max-width:1050px){
+        .service{
+    margin-left: 60px;
+     margin-right: 60px; 
+}
     .service-grid{
        display: grid;
      grid-template-columns: 1fr 1fr;
