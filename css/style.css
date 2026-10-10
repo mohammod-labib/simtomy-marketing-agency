@@ -5,6 +5,7 @@
   --purple-dark: #4c1d95;
   --green: #10b981;
   --blue-text:hwb(197 0% 0%);
+  --gold-1:hwb(39 32% 0%);
 }
 
 body{
@@ -15,6 +16,11 @@ body{
                    @font-face {
       font-family: 'Poppins';
       src: url('fonts/Poppins-Black.ttf');
+       }
+
+                    @font-face {
+      font-family: 'BricolageGrotesque';
+      src: url('fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
        }
 
                         @font-face {

@@ -6,6 +6,10 @@
      margin-bottom: 50px;
 }
 
+    .sevice-tittle{
+        color: black;
+    }
+
 .service-grid{
        display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
