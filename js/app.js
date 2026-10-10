@@ -7,10 +7,15 @@
     toggle.setAttribute('aria-expanded', isOpen);
   });
 
-  // মেনুর কোনো লিংকে ক্লিক করলে মেনু বন্ধ হয়ে যাবে
+  // 
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
       toggle.classList.remove('open');
     });
   });
+
+
+  function alertm(){
+    alert("⚠️ Warning!");
+  }
