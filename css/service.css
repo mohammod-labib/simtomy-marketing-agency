@@ -24,12 +24,12 @@
     }
 
     .service-subtittle{
-        font-weight: bolder;
+        font-weight: 500;
         font-size: 30px;
-        font-family: 'BricolageGrotesque', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #414040;
         position: relative;
-        top: -1cm;
+        top: -0.5cm;
     }
 
 .service-grid{

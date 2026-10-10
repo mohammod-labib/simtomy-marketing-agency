@@ -16,6 +16,6 @@
   });
 
 
-  function alertm(){
-    alert("⚠️ Warning!");
+  function ShowMessage(){
+    alert("⚠️It's a Demo website.");
   }
