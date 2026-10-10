@@ -8,18 +8,28 @@
 
     .sevice-tittle{
         font-weight: bolder;
-        font-size: 45px;
+        font-size: 50px;
         font-family: 'BricolageGrotesque', sans-serif;
         color: black;
-     display: flex;
-  align-items: center;
-  gap: 16px;
+        margin-bottom: 50px;
+        display: flex;
+         align-items: center;
+         gap: 16px;
     }
     .sevice-tittle::after{
-          content: "";
-    flex: 1;
-  height: 1px;
-  background: hsl(0, 1%, 25%);
+         content: "";
+         flex: 1;
+         height: 1px;
+        background: hsl(0, 1%, 25%);
+    }
+
+    .service-subtittle{
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: 'BricolageGrotesque', sans-serif;
+        color: #414040;
+        position: relative;
+        top: -1cm;
     }
 
 .service-grid{
