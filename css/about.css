@@ -1,0 +1,12 @@
+.about{
+   
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+        135deg,
+        #E0F7FF 0%,
+        #9ADFFF 35%,
+        #60B9FF 65%,
+        #2563EB 100%
+    );
+}
