@@ -32,6 +32,11 @@
     background-color: #d6d6d6;
 }
 
+.about-us{
+    color: #d6d6d6;
+    font-size: 27px;
+}
+
 .about-text{
     color: white;
     font-size: 21px;
@@ -40,4 +45,10 @@
 
 .about-text p{
     line-height: 1.5;
+}
+
+
+.about-slogan h4{
+    color: #d6d6d6;
+    font-size: 27px;
 }
