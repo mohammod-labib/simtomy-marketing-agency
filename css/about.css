@@ -1,6 +1,5 @@
 .about{
    
-    min-height: 100vh;
     margin: 0;
     background: linear-gradient(
         -45deg,
@@ -8,12 +7,14 @@
         hsl(209, 100%, 31%)
 
     );
-        padding:0px 60px;
+    margin-top: 60px;
+    padding:60px 60px;
 }
 
 .about-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .about .heading{
@@ -33,7 +34,10 @@
 
 .about-text{
     color: white;
-    font-size: 18px;
+    font-size: 21px;
     font-family: 'Inter' , sans-serif;
+}
 
+.about-text p{
+    line-height: 1.5;
 }
