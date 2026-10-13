@@ -8,10 +8,12 @@
         hsl(209, 100%, 31%)
 
     );
+        padding:0px 60px;
+  
 }
 
 .about .heading{
-    font-size: 36px;
+    font-size: 39px;
     color: white;
     font-family: 'BricolageGrotesque', sans-serif;
     display: flex;
