@@ -28,6 +28,11 @@ body{
       src: url('fonts/Inter-VariableFont_opsz\,wght.ttf');
        }
 
+
+       html{
+        scroll-behavior: smooth;
+       }
+
     #blue{
         color: var(--blue-text);
     }
