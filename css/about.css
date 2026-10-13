@@ -9,7 +9,11 @@
 
     );
         padding:0px 60px;
-  
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .about .heading{
@@ -25,4 +29,11 @@
     flex: 1;
     height: 1px;
     background-color: #d6d6d6;
+}
+
+.about-text{
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter' , sans-serif;
+
 }
