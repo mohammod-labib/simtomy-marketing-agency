@@ -47,8 +47,29 @@
     line-height: 1.5;
 }
 
+.about-slogan{  
+    margin-left: 150px;
+      font-family: 'Inter' , sans-serif;}
 
 .about-slogan h4{
     color: #d6d6d6;
     font-size: 27px;
 }
+
+
+  .slogan__lines {
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: clamp(2rem, 4.2vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+ 
+  .slogan__lines li {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
