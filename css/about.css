@@ -89,10 +89,26 @@
 
 
 @media all and (min-width:10px) and (max-width:550px){
+
+    .about{
+        padding-left: 30px;
+         padding-right: 30px;
+    }
+
     .about-grid{
         grid-template-columns: 1fr;
     }
+
     .about .heading{
-        font-size: 24px;
+        font-size: 33px;
+    }
+
+    .about-slogan{
+        order: -1;
+        margin-left: 15px;
+    }
+
+    .about-slogan h4{
+        font-size: 18px;
     }
 }
