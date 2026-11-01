@@ -89,6 +89,12 @@
 
 
 @media all and (min-width:10px) and (max-width:550px){
+    .about .heading{
+        font-size: clamp(36px,5vw,46px);
+    }
+}
+
+@media all and (min-width:10px) and (max-width:550px){
 
     .about{
         padding-left: 30px;
@@ -99,9 +105,6 @@
         grid-template-columns: 1fr;
     }
 
-    .about .heading{
-        font-size: 33px;
-    }
 
     .about-slogan{
         order: -1;
@@ -128,3 +131,56 @@
         text-align: center;
     }
 }
+
+
+@media all and (min-width:551px) and (max-width:850px){
+        .about{
+        padding-left: 50px;
+         padding-right: 50px;
+    }
+
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+
+  
+
+    .about-slogan{
+        order: -1;
+        margin-left: 15px;
+    }
+
+    .about-slogan h4{
+        margin-left: 0px;
+        font-size: 21px;
+    }
+    .slogan__lines li{
+        font-size: 27px;
+        line-height: 2;
+    }
+
+    .about-us {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .about-text p{
+        line-height: 2;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media all and (min-width:851px) and (max-width:1050px){
+
+.about-text p{font-size: 19px;}
+
+.about-us{font-size: 22px;}
+
+    .about-slogan{margin-left: 30px;}
+
+  .about-slogan h4{font-size: 25px;}
+
+  .slogan__lines li{font-size: 27px; line-height: 3;}
+}
+
