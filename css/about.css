@@ -109,6 +109,22 @@
     }
 
     .about-slogan h4{
+        margin-left: 0px;
         font-size: 18px;
+    }
+    .slogan__lines li{
+        font-size: 25px;
+        line-height: 2;
+    }
+
+    .about-us {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .about-text p{
+        line-height: 2;
+        font-size: 17px;
+        text-align: center;
     }
 }
