@@ -376,7 +376,7 @@
 }
 
 .cta-btn:hover {
-  background: #a78bfa;
+  background: var(--blue-2);
   transform: translateY(-3px);
 }
 
