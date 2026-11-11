@@ -93,6 +93,35 @@
     .direct-message{
         background-color: bisque;
         border: 2px solid #a1a1a1;
+        padding: 25px 18px;
+    }
+    .message-tittle{
+        font-size:30px ;
+        font-weight: 600;
+        margin-bottom: 50px;
+
+    }
+
+    .DM-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .message-card{
+        border:2px solid black ;
+        background-color: white;
+        padding: 10px 15px;
+        box-shadow: 0 0 10px 1px black;
+    }
+
+    .message-card .heading{
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
 
