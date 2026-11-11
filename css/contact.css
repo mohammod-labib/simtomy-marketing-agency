@@ -104,7 +104,7 @@
 
     .DM-grid{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
 
@@ -117,12 +117,35 @@
 
     .message-card .heading{
         display: inline-flex;
-        width: 30px;
-        height: 30px;
-        justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
+
+      .message-card .heading h5{
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: 700;
+      }
+      .message-card .name{
+        position: relative;
+        top: -15px;
+        font-size: 18px;
+        font-family: 'Inter';
+      }
+       .message-card .message{
+        align-items: center;
+        text-align: center;
+         position: relative;
+        top: -18px;
+        font-size: 16px;
+        font-family: 'Inter';
+        background-color: whitesmoke;
+        width: 80px;
+        padding: 6px;
+        border: 2px solid black ;
+        box-shadow: 10px 10px 0 5px yellow;
+
+      }
 
 
 
