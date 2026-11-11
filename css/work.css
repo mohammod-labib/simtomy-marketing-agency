@@ -1,14 +1,12 @@
 
-
-
-
-
 .work-section {
   padding: 110px 60px;
   margin: 0;
 }
 
-
+.work-section a{
+    cursor: pointer;
+}
 
 
 .work-tittle {
@@ -31,7 +29,7 @@
 
 .section-desc {
   color: hsl(0, 0%, 11%);
-  max-width: 360px;
+  max-width: 850px;
   line-height: 1.8;
   font-size: 16px;
   margin-bottom: 30px;
@@ -51,7 +49,7 @@
   min-width: 0;
   overflow: hidden;
   border-radius: 18px;
-  background: #12131e;
+  background: #383838;
   border: 1px solid #252536;
   transition: .35s ease;
   animation: appear .5s ease both;
@@ -59,7 +57,7 @@
 
 .project-card:hover {
   transform: translateY(-7px);
-  border-color: #7252c9;
+  border-color:var(--blue-1);
 }
 
 .project-card.hide {
@@ -90,7 +88,7 @@
 }
 
 .visual-brand {
-  background: linear-gradient(135deg,#302044,#a16c9a);
+  background: linear-gradient(135deg,var(--blue-1),var(--blue-2));
 }
 
 .visual-social {
@@ -291,7 +289,7 @@
 }
 
 .project-category {
-  color: #b69aff;
+  color: var(--blue-2);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -299,9 +297,9 @@
 }
 
 .project-type {
-  color: #858599;
+  color: lab(65.87% 0 -0.01);
   font-size: 10px;
-  border: 1px solid #343447;
+  border: 1px solid hsl(0, 0%, 87%);
   padding: 5px 9px;
   border-radius: 20px;
 }
@@ -310,10 +308,11 @@
   font-family: 'Space Grotesk', sans-serif;
   font-size: 23px;
   margin-bottom: 9px;
+  color: white;
 }
 
 .project-info p {
-  color: #9999ac;
+  color: hsl(204, 20%, 66%);
   font-size: 13px;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -331,12 +330,12 @@
 }
 
 .project-link span {
-  color: #a78bfa;
+  color: var(--blue-2);
   font-size: 18px;
 }
 
 .project-link:hover {
-  color: #a78bfa;
+  color: var(--blue-2);
 }
 
 /* BOTTOM CTA */
@@ -344,8 +343,8 @@
 .work-cta {
   margin-top: 55px;
   padding: 35px;
-  border: 1px solid #29283c;
-  background: linear-gradient(120deg,#171426,#10111d);
+  border: 1px solid hsl(198, 20%, 20%);
+  background: linear-gradient(120deg,#293e4e,hsl(199, 29%, 23%));
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -354,18 +353,19 @@
 }
 
 .work-cta h3 {
+    color:white;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 25px;
   margin-bottom: 8px;
 }
 
 .work-cta p {
-  color: #9999ac;
+  color: hsl(200, 17%, 58%);
   font-size: 13px;
 }
 
 .cta-btn {
-  background: #8b5cf6;
+  background: var(--blue-1);
   color: white;
   padding: 14px 22px;
   border-radius: 30px;
