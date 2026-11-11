@@ -24,22 +24,26 @@
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr ;
     gap: 50px;
+    margin-top: 70px;
 }
 
 .contact-section img{
     width: 33px;
 }
 
+
+    /**Social Media section**/
+
 .social-media{
       display: grid;
     grid-template-columns: 1fr;
-    gap:20px;
+    gap:10px;
 }
 
 .social-card{
-
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +51,8 @@
     margin-bottom: 0px;
     border-radius: 20px;
     padding: 30px;
-    border: 2px solid white;
+    border: 1px solid white;
+    background-color: var(--blue-3);
 }
 
 .social-media img{
@@ -59,7 +64,7 @@
 .social-card .media{
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 17px;
+    font-size: 20px;
     color: white;
     margin: 5px 0;
     
@@ -77,14 +82,28 @@
 }
 .social-card .name{
     font-family: 'Inter';
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     margin: 0;
 }
 
 
+    /**Direct Message Section **/
+
+    .direct-message{
+        background-color: bisque;
+        border: 2px solid #a1a1a1;
+    }
+
+
+
+
+
 @media all and (min-width:100px) and (max-width:600px) {
     .contact-section{
         padding: 70px 40px;
+    }
+    .contact-grid{
+        grid-template-columns: 1fr
     }
 }
