@@ -7,6 +7,7 @@
   --green: #10b981;
   --blue-text:hwb(197 0% 0%);
   --gold-1:hwb(39 32% 0%);
+  --body:lab(86.43% 2.17 13.47);
 }
 
 body{
