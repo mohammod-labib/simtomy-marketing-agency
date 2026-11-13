@@ -93,6 +93,19 @@
     font-size: 15px;
     margin: 0;
 }
+.facebook img{
+     background-color: oklab(66.906% -0.06637 -0.17135);
+       box-shadow: 0 0 0 10px #12b4ff;
+}
+.instagram img{
+     background-color: rgb(223, 222, 222);
+       box-shadow: 0 0 0 10px hsl(14, 100%, 54%);
+}
+
+.X-twitter img{
+     background-color: #1a1a1a;
+       box-shadow: 0 0 0 10px hwb(0 26% 74%);
+}
 
 
     /**Direct Message Section **/
