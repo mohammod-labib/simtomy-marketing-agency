@@ -40,14 +40,21 @@
       display: grid;
     grid-template-columns: 1fr;
     gap:10px;
+    margin-top: 30px;
 }
 
 .follow-social h2{
+    font-family: 'Poppins';
+    letter-spacing: 2px;
     color:white;
+    margin-bottom: 10px;
 }
 
 .follow-social #follow-p{
+    font-family: 'Inter';
+    font-size: 14px;
     color:white;
+    margin-bottom: 30px;
 }
 
 .social-card{
@@ -124,13 +131,19 @@
         padding: 25px 30px;
     }
     .message-tittle{
-        font-size:30px ;
+       font-family: 'Poppins';
+    letter-spacing: 2px;
+    color:#000000;
+    font-size: 24px;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
     }
     .message-subtittle{
-        margin-bottom: 40px;
+            font-family: 'Inter';
+    font-size: 14px;
+    color:#000000;
+        margin-bottom: 50px;
     }
 
     .DM-grid{
@@ -210,11 +223,29 @@
     }
 
     .direct-message{
+        position: relative;
+        top: 20px;
+        margin: 0 0;
         border: 0px;
         padding: 20px 40px;
     }
+ 
+}  
+
+
+@media all and (min-width:100px) and (max-width:510px) {
     .DM-grid{
+        padding: 5px 10px;
         margin-top: 50px;
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media all and (min-width:511px) and (max-width:700px) {
+    .DM-grid{
+        padding: 5px 10px;
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr;
     }
 }
