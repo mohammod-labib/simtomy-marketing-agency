@@ -143,15 +143,15 @@
    DIRECT MESSAGE
 */
 .direct-message {
-    padding: 25px 30px;
+    padding: 30px 30px;
     background-color: bisque;
     border: 2px solid #a1a1a1;
 }
 
 .message-tittle {
-    margin-bottom: 10px;
+    margin: 10px 30px;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 2px;
     color: #000000;
@@ -167,14 +167,14 @@
 .DM-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 30px;
+    gap: 39px;
 }
 
 .message-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
     min-width: 0;
     padding: 14px 18px 18px;
     background-color: white;
@@ -229,6 +229,9 @@
 
 /* ---- Tablet: stack the two columns ---- */
 @media (max-width: 992px) {
+    .contact-tittle{
+        padding: 10px 30px;
+    }
     .follow-social{
         padding: 1px 40px;
     }
@@ -236,9 +239,14 @@
         padding: 70px 0px;
 
     }
+    .message-tittle {
+        font-size: 24px;
+    }
      .direct-message {
+        border: 0px ;
         margin: 0;
-        
+        position: relative;
+        top:70px;
     }
 
     .contact-grid {
@@ -257,11 +265,7 @@
         padding: 40px 0;
     }
 
-    .contact-tittle,
-    .follow-social {
-        margin-left: 24px;
-        margin-right: 24px;
-    }
+
 
     .contact-grid {
         gap: 40px;
@@ -287,6 +291,8 @@
         padding: 28px 24px;
         border-left: 0;
         border-right: 0;
+        position: relative;
+        top: 40px;
     }
 
     .message-tittle {
@@ -313,8 +319,7 @@
 
 /* ---- Very small phones ---- */
 @media (max-width: 380px) {
-    .contact-tittle,
-    .follow-social {
+    .contact-tittle{
         margin-left: 16px;
         margin-right: 16px;
     }

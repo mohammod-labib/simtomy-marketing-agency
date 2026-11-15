@@ -54,4 +54,5 @@ body{
         align-items: center;
         width: 100%;
         height: 1.5cm;
+        z-index: 1000;
     }
