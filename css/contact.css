@@ -119,23 +119,23 @@
     padding: 7px;
     border-radius: 10px;
     background-color: hwb(199 16% 0%);
-    box-shadow: 0 0 0 10px var(--blue-2);
+    box-shadow: 0 0 0 6px var(--blue-2);
     box-sizing: content-box;
 }
 
 .facebook img {
     background-color: oklab(66.906% -0.06637 -0.17135);
-    box-shadow: 0 0 0 10px #12b4ff;
+    box-shadow: 0 0 0 6px #12b4ff;
 }
 
 .instagram img {
     background-color: rgb(223, 222, 222);
-    box-shadow: 0 0 0 10px hsl(14, 100%, 54%);
+    box-shadow: 0 0 0 6px hsl(14, 100%, 54%);
 }
 
 .X-twitter img {
     background-color: #1a1a1a;
-    box-shadow: 0 0 0 10px hwb(0 26% 74%);
+    box-shadow: 0 0 0 6px hwb(0 26% 74%);
 }
 
 
@@ -149,7 +149,7 @@
 }
 
 .message-tittle {
-    margin: 10px 30px;
+    margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -198,7 +198,7 @@
 .message-card .name {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     overflow-wrap: anywhere;   /* long emails / phone numbers never overflow */
     max-width: 100%;
 }
@@ -233,7 +233,13 @@
         padding: 10px 30px;
     }
     .follow-social{
-        padding: 1px 40px;
+        padding: 1px 30px;
+    }
+    .social-media{
+        padding: 5px 2px;
+    }
+    .social-card img{
+        padding: 4px;
     }
     .contact-section {
         padding: 70px 0px;
@@ -288,7 +294,7 @@
     /* Direct-message box goes edge-to-edge */
     .direct-message {
         margin: 0;
-        padding: 28px 24px;
+        padding: 28px 32px;
         border-left: 0;
         border-right: 0;
         position: relative;
