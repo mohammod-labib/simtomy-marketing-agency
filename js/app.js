@@ -17,7 +17,7 @@
 
 
   function ShowMessage(){
-    alert("⚠️It's a Demo website.");
+    alert("⚠️ This is a demo website for portfolio purposes only.");
   }
 
 

@@ -59,6 +59,7 @@
 }
 .service-card h4{
     font-size: 25px;
+    font-family: 'Poppins-semibold';
 }
 
 .service-card #subtittle{
@@ -69,8 +70,12 @@
 
 .service-card #text{
     color: hwb(210 18% 81%);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
+    font-family: 'Inter';
+}
+.service-card #text:hover{
+    color: #c7c6c6;
 }
 
 .service-card .amount{
