@@ -1,251 +1,341 @@
 
-.contact-section{
-
+/* ---------- Section ---------- */
+.contact-section {
     padding: 90px 60px;
     background-color: var(--blue-1);
 }
 
-.contact-tittle{
-      font-weight: bolder;
-        font-size: 40px;
-        font-family: 'BricolageGrotesque', sans-serif;
-        color: #ffffff;
-        margin-bottom: 0px;
-        display: flex;
-         align-items: center;
-         gap: 16px;
+.contact-section img {
+    display: block;
+    width: 33px;
+    max-width: 100%;
+    flex-shrink: 0;
 }
-.contact-tittle::after{
-         content: "";
-         flex: 1;
-         height: 1px;
-        background: hwb(0 86% 13%);
-    }
 
-.contact-grid{
+/* ---------- Title ---------- */
+.contact-tittle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    font-family: 'BricolageGrotesque';
+    font-size: clamp(33px, 5vw, 40px);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact-tittle::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: hwb(0 86% 13%);
+}
+
+/* ---------- Main grid ---------- */
+.contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 50px;
     margin-top: 70px;
-}
-
-.contact-section img{
-    width: 33px;
+    align-items: start;
 }
 
 
-    /**Social Media section**/
+/* 
+   SOCIAL MEDIA
+    */
+.follow-social h2 {
+    margin: 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
 
-.social-media{
-      display: grid;
-    grid-template-columns: 1fr;
-    gap:10px;
+.follow-social #follow-p {
+    margin: 0 0 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
     margin-top: 30px;
 }
 
-.follow-social h2{
-    font-family: 'Poppins';
-    letter-spacing: 2px;
-    color:white;
-    margin-bottom: 10px;
-}
-
-.follow-social #follow-p{
-    font-family: 'Inter';
-    font-size: 14px;
-    color:white;
-    margin-bottom: 30px;
-}
-
-.social-card{
-    max-width: 80%;
+.social-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:25px;
-    margin-bottom: 0px;
-    border-radius: 20px;
+    gap: 25px;
+    width: 100%;
+    max-width: 80%;
     padding: 30px;
-    border: 0px solid white;
-       background-color: var(--body);
-      color: black;
-      transition: 200ms ease;
-      cursor: pointer;
-}
-.social-card:hover{
- background-color: var(--blue-3);
-  color: white;
-  transform:translateY(-3px) ;
- 
+    border-radius: 20px;
+    background-color: var(--body);
+    color: black;
+    cursor: pointer;
+    transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
-.social-media img{
-    background-color: hwb(199 16% 0%);
-    padding: 7px;
-    border-radius: 10px;
-    box-shadow: 0 0 0 10px var(--blue-2);
+.social-card:hover {
+    background-color: var(--blue-3);
+    color: white;
+    transform: translateY(-3px);
 }
-.social-card .media{
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 20px;
-    margin: 5px 0;
-    
+
+.social-card .image {
+    flex-shrink: 0;
 }
-.social-card .content{
-    position: relative; 
-    z-index: 1;
-     flex: 1;
-     min-width: 0;
+
+.social-card .content {
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
 }
-.social-card .name{
-    font-family: 'Inter';
-    font-size: 15px;
+
+.social-card .media {
+    margin: 5px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.social-card .name {
     margin: 0;
-}
-.facebook img{
-     background-color: oklab(66.906% -0.06637 -0.17135);
-       box-shadow: 0 0 0 10px #12b4ff;
-}
-.instagram img{
-     background-color: rgb(223, 222, 222);
-       box-shadow: 0 0 0 10px hsl(14, 100%, 54%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    overflow-wrap: anywhere;
 }
 
-.X-twitter img{
-     background-color: #1a1a1a;
-       box-shadow: 0 0 0 10px hwb(0 26% 74%);
+/* Icon badges */
+.social-media img {
+    padding: 7px;
+    border-radius: 10px;
+    background-color: hwb(199 16% 0%);
+    box-shadow: 0 0 0 10px var(--blue-2);
+    box-sizing: content-box;
+}
+
+.facebook img {
+    background-color: oklab(66.906% -0.06637 -0.17135);
+    box-shadow: 0 0 0 10px #12b4ff;
+}
+
+.instagram img {
+    background-color: rgb(223, 222, 222);
+    box-shadow: 0 0 0 10px hsl(14, 100%, 54%);
+}
+
+.X-twitter img {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 0 10px hwb(0 26% 74%);
 }
 
 
-    /**Direct Message Section **/
+/*
+   DIRECT MESSAGE
+*/
+.direct-message {
+    padding: 25px 30px;
+    background-color: bisque;
+    border: 2px solid #a1a1a1;
+}
 
-    .direct-message{
-        background-color: bisque;
-        border: 2px solid #a1a1a1;
-        padding: 25px 30px;
-    }
-    .message-tittle{
-       font-family: 'Poppins';
-    letter-spacing: 2px;
-    color:#000000;
+.message-tittle {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000000;
+}
 
-    }
-    .message-subtittle{
-            font-family: 'Inter';
+.message-subtittle {
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    color:#000000;
-        margin-bottom: 50px;
-    }
+    color: #000000;
+}
 
-    .DM-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
+.DM-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+}
 
-    .message-card{
-        border:2px solid black ;
-        background-color: white;
-        padding: 10px 15px;
-        box-shadow: 0 0 10px 1px black;
-    }
+.message-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    padding: 14px 18px 18px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 1px black;
+}
 
-    .message-card .heading{
-        display: inline-flex;
-        align-items: center;
-        gap: 15px;
-    }
+.message-card .heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-      .message-card .heading h5{
-        font-size: 18px;
-        font-family: 'Inter';
-        font-weight: 700;
-      }
-      .message-card .name{
-        position: relative;
-        top: -15px;
-        font-size: 18px;
-        font-family: 'Inter';
-      }
-       .message-card .message{
-        align-items: center;
-        text-align: center;
-         position: relative;
-        top: -18px;
-        font-size: 15px;
-        font-family: 'Inter';
-        background-color: whitesmoke;
-        width: 90px;
-        padding: 6px;
-        border: 2px solid black ;
-        box-shadow: 5px 5px 0 1px yellow;
-        cursor: pointer;
-      }
-      .message-card .message:hover{
-        box-shadow: 5px 5px 0 1px #9dff00;
-      }
+.message-card .heading h5 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.message-card .name {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    overflow-wrap: anywhere;   /* long emails / phone numbers never overflow */
+    max-width: 100%;
+}
+
+.message-card .message {
+    margin-top: 4px;
+    min-width: 90px;
+    padding: 6px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 1px yellow;
+    cursor: pointer;
+    transition: box-shadow 150ms ease;
+}
+
+.message-card .message:hover {
+    box-shadow: 5px 5px 0 1px #9dff00;
+}
 
 
+/* 
+   RESPONSIVE
+   */
 
-
-
-@media all and (min-width:100px) and (max-width:600px) {
-    .contact-section{
-        padding: 20px 0px;
-    }
-    .contact-tittle{
-        margin-left: 40px;
-         margin-right: 40px;
-         margin-bottom: 0px;
-    }
-    .contact-grid{
-        grid-template-columns: 1fr
-    }
-
+/* ---- Tablet: stack the two columns ---- */
+@media (max-width: 992px) {
     .follow-social{
-        margin: 2px 40px;
+        padding: 1px 40px;
+    }
+    .contact-section {
+        padding: 70px 0px;
+
+    }
+     .direct-message {
+        margin: 0;
+        
     }
 
-    .social-card .media{
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 50px;
+        margin-top: 50px;
+    }
+   
+
+
+}
+
+/* ---- Mobile: full-width layout ---- */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .contact-tittle,
+    .follow-social {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .contact-grid {
+        gap: 40px;
+        margin-top: 35px;
+    }
+
+    .social-card {
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .social-card .media {
         font-size: 17px;
     }
-    .social-card .name{
+
+    .social-card .name {
         font-size: 13px;
     }
 
-    .direct-message{
-        position: relative;
-        top: 20px;
-        margin: 0 0;
-        border: 0px;
-        padding: 20px 40px;
+    /* Direct-message box goes edge-to-edge */
+    .direct-message {
+        margin: 0;
+        padding: 28px 24px;
+        border-left: 0;
+        border-right: 0;
     }
- 
-}  
+
+    .message-tittle {
+        font-size: 21px;
+    }
+
+    .message-subtittle {
+        margin-bottom: 30px;
+    }
 
 
-@media all and (min-width:100px) and (max-width:510px) {
-    .DM-grid{
-        padding: 5px 10px;
-        margin-top: 50px;
-        grid-template-columns: 1fr;
+}
+
+/* ---- Small mobile: DM cards in one column ---- */
+@media (max-width: 560px) {
+    .DM-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+     .message-card{
+        margin: 0 20px;
     }
 }
 
+/* ---- Very small phones ---- */
+@media (max-width: 380px) {
+    .contact-tittle,
+    .follow-social {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
-@media all and (min-width:511px) and (max-width:700px) {
-    .DM-grid{
-        padding: 5px 10px;
-        margin-top: 50px;
-        grid-template-columns: 1fr 1fr;
+    .direct-message {
+        padding: 24px 16px;
+    }
+
+    .social-card {
+        gap: 16px;
+        padding: 20px 18px;
+    }
+
+    .message-card .name {
+        font-size: 16px;
+    }
+}
+
+/* ---- Don't stick the hover-lift on touch screens ---- */
+@media (hover: none) {
+    .social-card:hover {
+        transform: none;
     }
 }
