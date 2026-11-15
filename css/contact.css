@@ -10,7 +10,7 @@
         font-size: 40px;
         font-family: 'BricolageGrotesque', sans-serif;
         color: #ffffff;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         display: flex;
          align-items: center;
          gap: 16px;
@@ -40,6 +40,14 @@
       display: grid;
     grid-template-columns: 1fr;
     gap:10px;
+}
+
+.follow-social h2{
+    color:white;
+}
+
+.follow-social #follow-p{
+    color:white;
 }
 
 .social-card{
@@ -118,8 +126,11 @@
     .message-tittle{
         font-size:30px ;
         font-weight: 600;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
+    }
+    .message-subtittle{
+        margin-bottom: 40px;
     }
 
     .DM-grid{
@@ -163,11 +174,11 @@
         width: 90px;
         padding: 6px;
         border: 2px solid black ;
-        box-shadow: 10px 10px 0 2px yellow;
+        box-shadow: 5px 5px 0 1px yellow;
         cursor: pointer;
       }
       .message-card .message:hover{
-        box-shadow: 10px 10px 0 2px #9dff00;
+        box-shadow: 5px 5px 0 1px #9dff00;
       }
 
 
@@ -176,7 +187,12 @@
 
 @media all and (min-width:100px) and (max-width:600px) {
     .contact-section{
-        padding: 0px 0px;
+        padding: 20px 0px;
+    }
+    .contact-tittle{
+        margin-left: 40px;
+         margin-right: 40px;
+         margin-bottom: 0px;
     }
     .contact-grid{
         grid-template-columns: 1fr
